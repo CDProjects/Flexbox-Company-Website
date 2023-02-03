@@ -44,3 +44,10 @@ nav a {
   color: white;
   font-family: 'Roboto Slab';
 }
+
+.badge {
+  display: flex;
+  position: fixed;
+  width: 12%;
+  height: auto;
+}
