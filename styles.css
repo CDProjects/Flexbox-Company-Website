@@ -21,5 +21,26 @@ header .content {
 h1, a {
     color: white;
     font-family: 'Roboto Slab';
-    align-content: center;
+    text-decoration: none;
+}
+
+header .name {
+  flex: 1;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 3.5rem;
+  list-style: none;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Roboto Slab';
 }
