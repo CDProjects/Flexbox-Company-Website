@@ -12,6 +12,14 @@ header {
     background-color: #0f2940;
 }
 
-.desktop .name {
+header .content {
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+}
+
+h1, a {
     color: white;
+    font-family: 'Roboto Slab';
+    align-content: center;
 }
