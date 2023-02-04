@@ -2,9 +2,9 @@
 
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME | Jonah's Fire Station</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styles.css" />
@@ -16,36 +16,38 @@
     />
   </head>
 
-    <!--Header-->
+  <!--Header-->
 
   <body>
-  <header class="header">
+    <header class="header">
       <div class="wrap flex">
-          <div class="logo flex"><a class="flex" href="/">Jonah's Fire Station</a></div>
-          <nav class="navbar">
-              <button class="close-nav">&#10006;</button>
-              <ul class="flex">
-                  <li><a href="">Fire Fighters</a></li>
-                  <li><a href="">Fire Vehicles</a></li>
-                  <li><a href="">About us</a></li>
-              </ul>
-          </nav>
-          <div class="icon-bar flex"><span></span></div>
+        <div class="logo flex">
+          <a class="flex" href="/">Jonah's Fire Station</a>
+        </div>
+        <nav class="navbar">
+          <button class="close-nav">&#10006;</button>
+          <ul class="flex">
+            <li><a href="">Fire Fighters</a></li>
+            <li><a href="">Fire Vehicles</a></li>
+            <li><a href="">About us</a></li>
+          </ul>
+        </nav>
+        <div class="icon-bar flex"><span></span></div>
       </div>
-  </header>
-  <script>
-    let openMenu = document.querySelector('.icon-bar');
-    let closeMenu = document.querySelector('.close-nav');
-    let navMenu = document.querySelector('.navbar');
-    let bodyEl = document.querySelector('body');
-    openMenu.addEventListener('click',function(){
-        navMenu.classList.add('nav-scale');
-        bodyEl.classList.add('overflow-none');
-    });
-    closeMenu.addEventListener('click',function(){
-        navMenu.classList.remove('nav-scale');
-        bodyEl.classList.remove('overflow-none');
-    });
+    </header>
+    <script>
+      let openMenu = document.querySelector(".icon-bar");
+      let closeMenu = document.querySelector(".close-nav");
+      let navMenu = document.querySelector(".navbar");
+      let bodyEl = document.querySelector("body");
+      openMenu.addEventListener("click", function () {
+        navMenu.classList.add("nav-scale");
+        bodyEl.classList.add("overflow-none");
+      });
+      closeMenu.addEventListener("click", function () {
+        navMenu.classList.remove("nav-scale");
+        bodyEl.classList.remove("overflow-none");
+      });
     </script>
   </body>
 </html>
