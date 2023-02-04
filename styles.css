@@ -48,6 +48,7 @@ nav a {
 .badge {
   display: flex;
   position: fixed;
-  width: 12%;
+  width: 5%;
   height: auto;
+  z-index: 999999;
 }
