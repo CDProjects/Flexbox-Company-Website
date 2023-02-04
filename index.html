@@ -19,27 +19,35 @@
   <body>
     <!--Header-->
 
-    <header class="header">
+  </head>
+  <body>
+  <header class="header">
       <div class="wrap flex">
-        <div class="Logo flex">
-          <a class="flex" href="index.html">Jonah's Fire Station</a>
-        </div>
-        <nav class="navbar">
-          <button class="close-nav">&#10006;</button>
-          <ul>
-            <li>
-              <a href="#">Fire Fighters</a>
-            </li>
-            <li>
-              <a href="#">Fire Vehicles</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="icon-bar flex"><span></span></div>
+          <div class="logo flex"><a class="flex" href="/">Jonah's Fire Station</a></div>
+          <nav class="navbar">
+              <button class="close-nav">&#10006;</button>
+              <ul class="flex">
+                  <li><a href="">Fire Fighters</a></li>
+                  <li><a href="">Fire Vehicles</a></li>
+                  <li><a href="">About us</a></li>
+              </ul>
+          </nav>
+          <div class="icon-bar flex"><span></span></div>
       </div>
-    </header>
+  </header>
+  <script>
+    let openMenu = document.querySelector('.icon-bar');
+    let closeMenu = document.querySelector('.close-nav');
+    let navMenu = document.querySelector('.navbar');
+    let bodyEl = document.querySelector('body');
+    openMenu.addEventListener('click',function(){
+        navMenu.classList.add('nav-scale');
+        bodyEl.classList.add('overflow-none');
+    });
+    closeMenu.addEventListener('click',function(){
+        navMenu.classList.remove('nav-scale');
+        bodyEl.classList.remove('overflow-none');
+    });
+    </script>
   </body>
 </html>
