@@ -32,6 +32,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     color: white;
+    font-family: 'Roboto Slab';
     background-color:#0f2940;
 }
 
@@ -246,7 +247,15 @@ a {
 
   } 
 
-  .emergency {
-    background-color: black !important;
-  }
+}
+
+.emergency {
+  display: block;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  background: black;
+  color: white;
+  font-family: 'Roboto Slab';
+  border-bottom: solid 1px #c6c1c1;
 }
