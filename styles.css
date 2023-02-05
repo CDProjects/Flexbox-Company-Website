@@ -192,13 +192,13 @@ a {
           background-color: #fffaf6;
       }
       .icon-bar span {
-          border-top: 2px solid var(--font-color);
+          border-top: 2px solid white;
           width: 100%;
       }
       .icon-bar span::before,
       .icon-bar span::after {
           content: "";
-          border-bottom: 2px solid var(--font-color);
+          border-bottom: 2px solid white;
           display: block;
           height: 8px;
       }
