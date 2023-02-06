@@ -266,6 +266,12 @@ a {
     border-bottom: solid 1px #c6c1c1;
 }
 
+.slider-background {
+    background-color: #353333;
+    height: 401.3px;
+    border-bottom: solid 1px #c6c1c1;
+}
+
 .slider-container {
     display: block;
     margin: 0 auto;
@@ -327,3 +333,84 @@ div#slider figure {
         left: 0;
     }
 }  
+
+.quote-container {
+    display: flex;
+    width: 100%;
+    height: 140px;
+    background-color: #ba1515;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.quote {
+    color: white;
+    font-style: italic;
+    font-family: 'Roboto Slab';
+    font-size: 200%;
+    text-align: center;
+}
+
+.container-background {
+    background-color: #f3f3f3;
+}
+
+.main-section {
+    max-width: 920px;
+    margin: 0 auto;
+    float: none;
+    border-top: solid 1px white;
+}
+
+.header-container {
+    padding-top: 5%;
+    margin-bottom: -50px;
+}
+
+.fire-fighters {
+    color: #ba1515;
+    font-family: 'Roboto Slab';
+    letter-spacing: 2px;
+    font-size: 200%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    background-color: #f3f3f3;
+    align-items: center;
+}
+
+.fire-fighter {
+    flex: 1;
+    padding: 2rem;
+    margin: 0px 2.5rem;
+    background-color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.fire-fighter .image-container {
+    width: 90%;
+    height: 65%;    
+    margin: 0 auto;
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+}
+
+.fire-fighter .content {
+    padding: 2.5rem;
+}
