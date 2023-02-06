@@ -269,7 +269,7 @@ a {
 .slider-container {
     display: block;
      margin: 0 auto;
-    max-width: 720px;
+    max-width: 1020px;
     text-align: center;
 }
 
@@ -278,7 +278,7 @@ a {
     box-sizing: content-box;
     display: inline-block;
     background: black;
-    max-width: 720px;
+    max-width: 1020px;
     margin: 0 auto;
     overflow: hidden;
     border-radius: 4px;
