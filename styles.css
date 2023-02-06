@@ -351,3 +351,42 @@ div#slider figure {
     font-size: 200%;
     text-align: center;
 }
+
+.container-background {
+    background-color: #f3f3f3;
+}
+
+.main-section {
+    max-width: 920px;
+    margin: 0 auto;
+    float: none;
+    border-top: solid 1px white;
+}
+
+.header-container {
+    padding-top: 5%;
+    margin-bottom: -50px;
+}
+
+.fire-fighters {
+    color: #ba1515;
+    font-family: 'Roboto Slab';
+    letter-spacing: 2px;
+    font-size: 200%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    background-color: #f3f3f3;
+}
+
+.fire-fighter1 {
+    flex: 1;
+    padding: 2rem;
+    margin: 0px 1.25rem;
+    background-color: white;
+}
