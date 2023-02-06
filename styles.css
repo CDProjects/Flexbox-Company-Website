@@ -379,15 +379,16 @@ div#slider figure {
 
 .flex-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 4rem 5%;
     background-color: #f3f3f3;
+    align-items: center;
 }
 
 .fire-fighter {
     flex: 1;
     padding: 2rem;
-    margin: 0px 1.25rem;
+    margin: 0px 2.5rem;
     background-color: white;
 }
 
@@ -399,6 +400,10 @@ div#slider figure {
     width: 90%;
     height: 65%;    
     margin: 0 auto;
+}
+
+.image-container {
+    overflow: hidden;
 }
 
 .image-container img {
