@@ -270,7 +270,7 @@ a {
     display: block;
      margin: 0 auto;
     max-width: 720px;
-  text-align: center;
+    text-align: center;
 }
 
 .auto-slider {
@@ -285,7 +285,12 @@ a {
 }
 
 div#slider { overflow: hidden; }
-div#slider figure img { width: 20%; float: left; }
+div#slider figure img { 
+    width: 20%; 
+    height: 349px;
+    object-fit: cover;
+    float: left; 
+}
 div#slider figure { 
   position: relative;
   width: 500%;
