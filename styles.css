@@ -287,7 +287,7 @@ a {
 div#slider { overflow: hidden; }
 div#slider figure img { 
     width: 20%; 
-    height: 349px;
+    height: 400px;
     object-fit: cover;
     float: left; 
 }
