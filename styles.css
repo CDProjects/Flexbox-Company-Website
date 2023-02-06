@@ -384,9 +384,13 @@ div#slider figure {
     background-color: #f3f3f3;
 }
 
-.fire-fighter1 {
+.fire-fighter {
     flex: 1;
     padding: 2rem;
     margin: 0px 1.25rem;
     background-color: white;
+}
+
+.center {
+    text-align: center;
 }
