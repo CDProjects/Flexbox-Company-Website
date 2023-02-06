@@ -268,7 +268,7 @@ a {
 
 .slider-background {
     background-color: #353333;
-    height: 401.49px;
+    height: 401.3px;
     border-bottom: solid 1px #c6c1c1;
 }
 
@@ -379,7 +379,7 @@ div#slider figure {
 
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 4rem 5%;
     background-color: #f3f3f3;
 }
@@ -393,4 +393,19 @@ div#slider figure {
 
 .center {
     text-align: center;
+}
+
+.fire-fighter .image-container {
+    width: 90%;
+    height: 65%;    
+    margin: 0 auto;
+}
+
+.image-container img {
+    display: block;
+    max-width: 100%;
+}
+
+.fire-fighter .content {
+    padding: 2.5rem;
 }
