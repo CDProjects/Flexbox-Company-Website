@@ -412,5 +412,19 @@ div#slider figure {
 }
 
 .fire-fighter .content {
-    padding: 2.5rem;
+    padding: 2rem;
+}
+
+.fire-fighter h2 {
+    padding-bottom: .5rem;
+    font-size: 2rem;
+    font-family: 'Roboto Slab';
+    color:#ba1515
+}
+
+@media only screen and (max-width: 760px) {
+    .fire-fighter {
+        margin: 0;
+        padding: 1.25rem 1rem 0 1rem;
+    }
 }
