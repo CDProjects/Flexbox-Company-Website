@@ -389,6 +389,7 @@ div#slider figure {
     flex: 1;
     padding: 2rem;
     margin: 0px 2.5rem;
+    height: 30rem;
     background-color: white;
 }
 
@@ -412,12 +413,13 @@ div#slider figure {
 }
 
 .fire-fighter .content {
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 .fire-fighter h2 {
-    padding-bottom: .5rem;
-    font-size: 2rem;
+    margin-top: -1.563rem;
+    margin-bottom: 0;
+    font-size: 2.25rem;
     font-family: 'Roboto Slab';
     color:#ba1515
 }
