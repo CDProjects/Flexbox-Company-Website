@@ -377,3 +377,21 @@ div#slider figure {
     margin-top: 40px;
 }
 
+.team {
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.teammate {
+    padding: 10px;
+    flex-basis: auto;
+}
+
+.teammate img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+}
