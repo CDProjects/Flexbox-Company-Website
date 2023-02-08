@@ -420,12 +420,17 @@ div#slider figure {
     color: #ba1515;
 }
 
+.separator {
+    width: 100%;
+    height: 1.875rem;
+}
+
 @media (max-width: 490px) {
     .quote, .fire, .teammate h2 {
         font-size: 150%;
     }
 
-    .background {
+    .background, .background1 {
         margin-bottom: 5%;
     }
 } 
