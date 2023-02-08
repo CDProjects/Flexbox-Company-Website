@@ -1,436 +1,467 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    line-height: 1.5em;
+  box-sizing: border-box;
+  line-height: 1.5em;
 }
 
 :root {
-    --body-bg: #fafcf5;
-    --prime-color: #ba1515;
+  --body-bg: #fafcf5;
+  --prime-color: #ba1515;
 }
 
 html {
-    font-size: 16px;
-    -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    overflow-wrap: break-word;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+  overflow-wrap: break-word;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
-    all: unset;
-    cursor: pointer;
+  all: unset;
+  cursor: pointer;
 }
 
 .flex {
-    display: flex;
-    flex-wrap: wrap;
-    color: white;
-    font-family: 'Roboto Slab';
-    background-color:#0f2940;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-family: "Roboto Slab";
+  background-color: #0f2940;
 }
 
 .header {
-    background-color: #0f2940;;
-    border-bottom: solid 1px #c6c1c1;
+  background-color: #0f2940;
+  border-bottom: solid 1px #c6c1c1;
 }
 .header .wrap {
-    max-width: 1200px;
-    height: 80px;
-    padding: 0 20px;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 1200px;
+  height: 80px;
+  padding: 0 20px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    align-items: center;
+  align-items: center;
 }
 .logo a {
-    font-size: 2rem;
-    font-weight: bold;
-    align-items: center;
-    font-family: "Roboto Slab", cursive;
-    color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: center;
+  font-family: "Roboto Slab", cursive;
+  color: white;
 }
 
 .logo a::before {
-    content: "";
-    margin-right: 7px;
-    width: 50px;
-    height: 50px;
-    background: url("./Resources/Images/Fire\ department\ badge.png") no-repeat center;
-    background-size: 65px;
+  content: "";
+  margin-right: 7px;
+  width: 50px;
+  height: 50px;
+  background: url("./Resources/Images/Fire\ department\ badge.png") no-repeat
+    center;
+  background-size: 65px;
 }
 
 .icon-bar {
-    display: none;
+  display: none;
 }
 
 .navbar .close-nav {
-    display: none;
+  display: none;
 }
 
 .navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  align-items: center;
 }
 
 .navbar li {
-    padding: 0 0.6em;
+  padding: 0 0.6em;
 }
 
 .navbar a {
-    font-size: 1.125rem;
-    display: block;
-    padding: 0.3em;
-    font-weight: bold;
+  font-size: 1.125rem;
+  display: block;
+  padding: 0.3em;
+  font-weight: bold;
 }
 .navbar a:hover {
-    color: var(--prime-color);
+  color: var(--prime-color);
 }
 
 @media (max-width: 812px) {
+  .container {
+    font-size: 1rem;
+  }
+  .icon-bar {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    padding: 0 12px;
+    border-radius: 3px;
+  }
+  .icon-bar:hover {
+    background-color: #fffaf6;
+  }
+  .icon-bar span {
+    border-top: 2px solid white;
+    width: 100%;
+  }
+  .icon-bar span::before,
+  .icon-bar span::after {
+    content: "";
+    border-bottom: 2px solid white;
+    display: block;
+    height: 8px;
+  }
+  .overflow-none {
+    overflow: hidden;
+  }
+  .navbar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transition: 0s linear;
+    transform: scale(0);
+    top: 0;
+    left: 0;
+    background-color: #fafcf5;
+    z-index: 9;
+  }
+  .navbar .close-nav {
+    all: unset;
+    font-size: 2.5rem;
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+  }
+  .navbar .close-nav:hover {
+    color: #999999;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  .navbar li {
+    padding: 0.7rem 0;
+  }
+  .navbar a {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  .nav-scale {
+    transform: scale(1) !important;
+  }
+
+  @media (max-width: 460px) {
+    .logo a {
+      font-size: 20px;
+    }
     .container {
-        font-size: 1rem;
+      font-size: 1rem;
     }
     .icon-bar {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        border: 1px solid white;
-        width: 50px;
-        height: 50px;
-        padding: 0 12px;
-        border-radius: 3px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border: 1px solid white;
+      width: 50px;
+      height: 50px;
+      padding: 0 12px;
+      border-radius: 3px;
     }
     .icon-bar:hover {
-        background-color: #fffaf6;
+      background-color: #fffaf6;
     }
     .icon-bar span {
-        border-top: 2px solid white;
-        width: 100%;
+      border-top: 2px solid white;
+      width: 100%;
     }
     .icon-bar span::before,
     .icon-bar span::after {
-        content: "";
-        border-bottom: 2px solid white;
-        display: block;
-        height: 8px;
+      content: "";
+      border-bottom: 2px solid white;
+      display: block;
+      height: 8px;
     }
     .overflow-none {
-        overflow: hidden;
+      overflow: hidden;
     }
     .navbar {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        transition: 0s linear;
-        transform: scale(0);
-        top: 0;
-        left: 0;
-        background-color: #fafcf5;
-        z-index: 9;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      transition: 0s linear;
+      transform: scale(0);
+      top: 0;
+      left: 0;
+      background-color: #fafcf5;
+      z-index: 9;
     }
     .navbar .close-nav {
-        all: unset;
-        font-size: 2.5rem;
-        display: block;
-        position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
-        cursor: pointer;
+      all: unset;
+      font-size: 2.5rem;
+      display: block;
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      cursor: pointer;
     }
     .navbar .close-nav:hover {
-        color: #999999;
+      color: #999999;
     }
     .navbar ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
     }
     .navbar li {
-        padding: 0.7rem 0;
+      padding: 0.7rem 0;
     }
     .navbar a {
-        font-size: 2rem;
-        text-transform: uppercase;
+      font-size: 2rem;
+      text-transform: uppercase;
     }
-    
+
     .nav-scale {
-        transform: scale(1) !important;
-    }  
-
-    @media (max-width: 460px) {
-
-      .logo a {
-        font-size: 20px;
-      }
-      .container {
-          font-size: 1rem;
-      }
-      .icon-bar {
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          border: 1px solid white;
-          width: 50px;
-          height: 50px;
-          padding: 0 12px;
-          border-radius: 3px;
-      }
-      .icon-bar:hover {
-          background-color: #fffaf6;
-      }
-      .icon-bar span {
-          border-top: 2px solid white;
-          width: 100%;
-      }
-      .icon-bar span::before,
-      .icon-bar span::after {
-          content: "";
-          border-bottom: 2px solid white;
-          display: block;
-          height: 8px;
-      }
-      .overflow-none {
-          overflow: hidden;
-      }
-      .navbar {
-          position: fixed;
-          width: 100%;
-          height: 100%;
-          transition: 0s linear;
-          transform: scale(0);
-          top: 0;
-          left: 0;
-          background-color: #fafcf5;
-          z-index: 9;
-      }
-      .navbar .close-nav {
-          all: unset;
-          font-size: 2.5rem;
-          display: block;
-          position: absolute;
-          top: 1.5rem;
-          right: 1.5rem;
-          cursor: pointer;
-      }
-      .navbar .close-nav:hover {
-          color: #999999;
-      }
-      .navbar ul {
-          flex-direction: column;
-          align-items: center;
-          padding: 2rem;
-      }
-      .navbar li {
-          padding: 0.7rem 0;
-      }
-      .navbar a {
-          font-size: 2rem;
-          text-transform: uppercase;
-      }
-      
-      .nav-scale {
-          transform: scale(1) !important;
-      }  
-
-  } 
-
+      transform: scale(1) !important;
+    }
+  }
 }
 
 .emergency {
-    text-transform: uppercase;
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 12px;
-    background: black;
-    color: white;
-    font-family: 'Montserrat';
-    letter-spacing: 2px;
-    padding-top: 2px;
-    height: 22px;
-    position: relative;
-    box-sizing: content-box;
-    border-bottom: solid 1px #c6c1c1;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  background: black;
+  color: white;
+  font-family: "Montserrat";
+  letter-spacing: 2px;
+  padding-top: 2px;
+  height: 22px;
+  position: relative;
+  box-sizing: content-box;
+  border-bottom: solid 1px #c6c1c1;
 }
 
 .slider-background {
-    background-color: #353333;
-    height: 401.3px;
-    border-bottom: solid 1px #c6c1c1;
+  background-color: #353333;
+  height: 401.3px;
+  border-bottom: solid 1px #c6c1c1;
 }
 
 .slider-container {
-    display: block;
-    margin: 0 auto;
-    max-width: 1020px;
-    text-align: center;
+  display: block;
+  margin: 0 auto;
+  max-width: 1020px;
+  text-align: center;
 }
 
 .auto-slider {
-    position: relative;
-    box-sizing: content-box;
-    display: inline-block;
-    background: black;
-    max-width: 1020px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 4px;
+  position: relative;
+  box-sizing: content-box;
+  display: inline-block;
+  background: black;
+  max-width: 1020px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
-div#slider { overflow: hidden; }
-div#slider figure img { 
-    width: 20%; 
-    height: 400px;
-    object-fit: cover;
-    float: left; 
+div#slider {
+  overflow: hidden;
 }
-div#slider figure { 
+div#slider figure img {
+  width: 20%;
+  height: 400px;
+  object-fit: cover;
+  float: left;
+}
+div#slider figure {
   position: relative;
   width: 500%;
   margin: 0;
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 25s sliding ease infinite; 
+  animation: 25s sliding ease infinite;
 }
 
 .indicator {
-    width: 100%;
-    max-width: 720%;
-    height: 6px;
-    background: #ba1515;
-    position: absolute;
-    animation: indicating 5s ease infinite;
+  width: 100%;
+  max-width: 720%;
+  height: 6px;
+  background: #ba1515;
+  position: absolute;
+  animation: indicating 5s ease infinite;
 }
 
 @keyframes sliding {
-    0%{left: 0%;}
-    20%{left: -100%;}
-    40%{left: -200%;}
-    60%{left: -300%;}
-    80%{left: -400%;}
-    100%{left: 0%;}
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  60% {
+    left: -300%;
+  }
+  80% {
+    left: -400%;
+  }
+  100% {
+    left: 0%;
+  }
 }
 
-@keyframes indicating{
-    from{
-        left: -100%;
-    }
-    to{
-        left: 0;
-    }
-}  
+@keyframes indicating {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
 
 .quote-container {
-    display: flex;
-    width: 100%;
-    height: 140px;
-    background-color: #ba1515;
-    justify-content: center;
-    align-items: center;
-    
+  display: flex;
+  width: 100%;
+  height: 140px;
+  background-color: #ba1515;
+  justify-content: center;
+  align-items: center;
 }
 
 .quote {
-    color: white;
-    font-style: italic;
-    font-family: 'Roboto Slab';
-    font-size: 200%;
-    text-align: center;
+  color: white;
+  font-style: italic;
+  font-family: "Roboto Slab";
+  font-size: 200%;
+  text-align: center;
 }
 
 .container-background {
-    background-color: #f3f3f3;
+  background-color: #f3f3f3;
 }
 
 .main-section {
-    max-width: 920px;
-    margin: 0 auto;
-    float: none;
+  max-width: 920px;
+  margin: 0 auto;
+  float: none;
 }
 
 .header-container {
-    padding-top: 5%;
-    margin-bottom: -50px;
+  padding-top: 5%;
+  margin-bottom: -50px;
 }
 
 .fire {
-    color: #ba1515;
-    font-family: 'Roboto Slab';
-    letter-spacing: 2px;
-    font-size: 200%;
-    text-align: center;
-    margin-top: 40px;
+  color: #ba1515;
+  font-family: "Roboto Slab";
+  letter-spacing: 2px;
+  font-size: 200%;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .team {
-    padding-top: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  padding-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .background {
-    background-color: white;
-    border: 4px solid white;
+  background-color: white;
+  border: 4px solid white;
 }
 
 .background1 {
-    background-color: white;
-    border: 14px solid white;
+  background-color: white;
+  border: 14px solid white;
 }
 
 .teammate {
-    padding: 10px;
-    flex-basis: auto;
+  padding: 10px;
+  flex-basis: auto;
 }
 
 .teammate img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: auto;
 }
 
 .teammate1 img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-    height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: auto;
 }
 
-.teammate h2, .teammate1 h2 {
-    margin: 0;
-    padding: 10px;
-    font-family: 'Roboto Slab';
-    text-align: center;
-    color: #ba1515;
+.teammate h2,
+.teammate1 h2 {
+  margin: 0;
+  padding: 10px;
+  font-family: "Roboto Slab";
+  text-align: center;
+  color: #ba1515;
 }
 
 .separator {
+  width: 100%;
+  height: 1.875rem;
+}
+
+@media (max-width: 856px) {
+  .background1 {
+    margin-bottom: 5%;
+  }
+
+.separator {
     width: 100%;
-    height: 1.875rem;
+    height: 0;
+  }
 }
 
 @media (max-width: 490px) {
-    .quote, .fire, .teammate h2 {
-        font-size: 150%;
-    }
+  .quote,
+  .fire,
+  .teammate h2 {
+    font-size: 150%;
+  }
 
-    .background, .background1 {
-        margin-bottom: 5%;
-    }
-} 
+  .background,
+  .background1 {
+    margin-bottom: 5%;
+  }
+
+  .separator {
+    width: 100%;
+    height: 0;
+  }
+}
