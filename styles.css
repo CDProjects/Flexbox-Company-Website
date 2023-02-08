@@ -389,6 +389,11 @@ div#slider figure {
     border: 4px solid white;
 }
 
+.background1 {
+    background-color: white;
+    border: 14px solid white;
+}
+
 .teammate {
     padding: 10px;
     flex-basis: auto;
@@ -401,7 +406,14 @@ div#slider figure {
     height: auto;
 }
 
-.teammate h2 {
+.teammate1 img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+}
+
+.teammate h2, .teammate1 h2 {
     margin: 0;
     padding: 10px;
     font-family: 'Roboto Slab';
