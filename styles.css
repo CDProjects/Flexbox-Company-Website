@@ -368,7 +368,7 @@ div#slider figure {
     margin-bottom: -50px;
 }
 
-.fire-fighters {
+.fire {
     color: #ba1515;
     font-family: 'Roboto Slab';
     letter-spacing: 2px;
@@ -410,7 +410,7 @@ div#slider figure {
 }
 
 @media (max-width: 490px) {
-    .quote, .fire-fighters, .teammate h2 {
+    .quote, .fire, .teammate h2 {
         font-size: 150%;
     }
 
