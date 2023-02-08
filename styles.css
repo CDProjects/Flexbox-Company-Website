@@ -384,10 +384,14 @@ div#slider figure {
     justify-content: space-evenly;
 }
 
+.background {
+    background-color: white;
+    border: 4px solid white;
+}
+
 .teammate {
     padding: 10px;
     flex-basis: auto;
-    border: 10px solid white;
 }
 
 .teammate img {
@@ -404,3 +408,13 @@ div#slider figure {
     text-align: center;
     color: #ba1515;
 }
+
+@media (max-width: 490px) {
+    .quote, .fire-fighters, .teammate h2 {
+        font-size: 150%;
+    }
+
+    .background {
+        margin-bottom: 5%;
+    }
+} 
