@@ -466,6 +466,15 @@ div#slider figure {
   }
 }
 
+.fire1 {
+  color: #ba1515;
+  font-family: "Roboto Slab";
+  letter-spacing: 2px;
+  font-size: 200%;
+  text-align: center;
+  margin-top: 40px;
+}
+
 .quote1 {
   color: #ba1515;
   font-style: italic;
@@ -520,4 +529,17 @@ div#slider figure {
   width: 100%;
   height: 1.875rem;
   background-color: #f3f3f3;
+}
+
+@media (max-width: 700px) {
+  .fire1 {
+    font-size: 150%;
+  }
+  .quote1 {
+    font-size: 100%;
+  }
+
+  .quote2, .quote3 {
+    font-size: 80%;
+  }
 }
