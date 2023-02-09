@@ -11,7 +11,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 1rem;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -38,12 +38,12 @@ a {
 
 .header, .footer {
   background-color: #0f2940;
-  border-bottom: solid 1px #c6c1c1;
+  border-bottom: solid 0.063rem #c6c1c1;
 }
 .header .wrap {
-  max-width: 1200px;
-  height: 80px;
-  padding: 0 20px;
+  max-width: 75rem;
+  height: 5rem;
+  padding: 0 1.25rem;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -62,12 +62,12 @@ a {
 
 .logo a::before {
   content: "";
-  margin-right: 7px;
-  width: 50px;
-  height: 50px;
+  margin-right: 0.438rem;
+  width: 3.125rem;
+  height: 3.125rem;
   background: url("./Resources/Images/Fire\ department\ badge.png") no-repeat
     center;
-  background-size: 65px;
+  background-size: 4.063rem;
 }
 
 .icon-bar {
@@ -108,11 +108,11 @@ a {
     cursor: pointer;
     display: flex;
     align-items: center;
-    border: 1px solid white;
-    width: 50px;
-    height: 50px;
-    padding: 0 12px;
-    border-radius: 3px;
+    border: 0.063rem solid white;
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0 0.75rem;
+    border-radius: 0.188rem;
   }
   .icon-bar:hover {
     background-color: #fffaf6;
