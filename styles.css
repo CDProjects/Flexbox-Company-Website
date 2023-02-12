@@ -265,6 +265,7 @@ a {
 }
 
 .slider-background {
+  display: flex;
   background-color: black; 
   height: 25.081rem;
   border-bottom: solid 0.063rem #c6c1c1;
